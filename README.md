@@ -35,6 +35,9 @@ Assuming that you've done steps 1&2 and have a xxxxx.hex file that is sitting ar
 	- Because we don't all have the same board, it is NORMAL to have slightly different text in the console
 	- All you need to do is copy this line and replace the last section 
 > flash:w:/tmp/arduino_build_192428.ino.hex
-by 
+
+with
+
 > {path_to_your_hex}/{hexfile.hex 
+	
 	- DON'T FORGET TO HIT THE RESET BUTTON BEFORE RUNNING THIS LINE
