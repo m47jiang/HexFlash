@@ -13,11 +13,24 @@ Now we made sure we have an arduino compatible board it's time to try flashing s
 
 	- Download the [arduino IDE](www.arduino.cc/en/Main/Software) 
 	- Open an example project - Blink(this comes with the IDE)
+	
+![image of Blink](https://github.com/m47jiang/HexFlash/blob/master/blink_project.png)
+	
 	- Select your board from tools -> board -> "your board here"
+	
+![](https://github.com/m47jiang/HexFlash/blob/master/select_board.png)
+
 	- If you can't find your board, using the Boards Manager to find it and install it
+	
+![](https://github.com/m47jiang/HexFlash/blob/master/boards_manager.png)
+
 	- Connect the board to the computer using usb cable
-	- Reset your board (usually there's a reset button on the arduino device)
-	- Compile and push
+	- Select the correct port from tools -> port -> "dev/ttyXXX" or "COMX" if no ports show up, you need to reset your board
+	- Once you've selected port, reset board again (usually there's a reset button on the arduino device)
+	- Compile and upload
+	
+![](https://github.com/m47jiang/HexFlash/blob/master/compile_upload.png)
+	
 	- Congrats! You've just pushed your flashed your first board!
 	- If it didn't work (you see bad error messages), try the last 3 steps again (a few times)
 	
@@ -26,7 +39,7 @@ This step is for those that somehow got a .hex file from somewhere and want to f
 
 Assuming that you've done steps 1&2 and have a xxxxx.hex file that is sitting around and you think it might solve your problems.   
 
-	- Open Arduino IDE and check "show verbose output during upload"
+	- Open Arduino IDE and check "show verbose output during upload" in File -> Preferences
 	- Compile and push Blink or any other example
 	- Look at the ouput and try to find the line with 
 > /{somepath}/bin/avrdude -C /{somepath}/etc/avrdude.conf -v -p atmega32u4 -c avr109 -P /dev/ttyACM0 -b57600 -D -U 
