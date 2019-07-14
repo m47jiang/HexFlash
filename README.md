@@ -56,9 +56,9 @@ Assuming that you've done steps 1&2 and have a xxxxx.hex file that is sitting ar
 	
 - with
 
-		path_to_your_hex/hexfile.hex
+		{path_to_your_hex}/your_hexfile.hex
 	
 - DON'T FORGET TO HIT THE RESET BUTTON BEFORE RUNNING THIS LINE
 - Run the changed result in the command line or terminal should look something like this:
 	
-	 	/{somepath}/bin/avrdude -C /{somepath}/etc/avrdude.conf -v -p atmega32u4 -c avr109 -P /dev/ttyACM0 -b57600 -D -U {path_to_your_hex}/hexfile.hex
+	 	/{somepath}/bin/avrdude -C /{somepath}/etc/avrdude.conf -v -p atmega32u4 -c avr109 -P /dev/ttyACM0 -b57600 -D -U {path_to_your_hex}/your_hexfile.hex
